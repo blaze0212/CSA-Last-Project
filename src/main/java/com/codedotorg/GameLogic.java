@@ -29,13 +29,16 @@ public class GameLogic {
      */
     public int binarySearch(String predictedClass) {
         if(predictedClass.equals("0 Thumbs Up")) {
-            guessLower();
+            return guessLower();
         } else if(predictedClass.equals("1 Thumbs Down")) {
-            guessHigher();
+           return guessHigher();
         } else if(predictedClass.equals("2 Stop")) {
-            guessCorrect();
+           return guessCorrect();
         }
-        return -1;
+        else
+        {
+            return -1;
+        }
     }
 
     /**
